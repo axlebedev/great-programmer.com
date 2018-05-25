@@ -1,0 +1,41 @@
+body {
+  background-color: #e4e4e4; }
+
+.wrapper {
+  font-family: 'Ubuntu', Arial, sans-serif;
+  font-size: 20pt;
+  text-align: center;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  min-width: 600px;
+  background-color: white;
+  padding: 1em;
+  font-weight: bold;
+  color: #393939;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+
+.link {
+  text-decoration: none;
+  font-size: 0.8em;
+  border-bottom: 1pt dashed #535353;
+  font-weight: normal;
+  color: #535353;
+  white-space: nowrap; }
+  .link:hover {
+    border-bottom-style: solid;
+    border-bottom-color: #393939;
+    color: #393939; }
+
+@media (max-width: 800px) {
+  .wrapper {
+    width: 80%;
+    min-width: 0; } }
+
+@media (max-height: 500px) {
+  .wrapper {
+    top: 45%; } }
