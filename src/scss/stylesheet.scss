@@ -2,8 +2,10 @@ body {
   background-color: #e4e4e4
 }
 
+$textColor: #393939;
+$noHoverColor: #535353;
 .wrapper {
-  font-family: Arial, sans-serif;
+  font-family: 'Ubuntu', Arial, sans-serif;
   font-size: 20pt;
   text-align: center;
 
@@ -11,24 +13,40 @@ body {
   top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
+  min-width: 600px;
 
   background-color: white;
   padding: 1em;
   font-weight: bold;
-  color: #393939;
+  color: $textColor;
 
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
 .link {
-  color: black;
   text-decoration: none;
   font-size: 0.8em;
-  border-bottom: 1pt dashed black;
+  border-bottom: 1pt dashed $noHoverColor;
   font-weight: normal;
-  color: #494949;
+  color: $noHoverColor;
+  white-space: nowrap;
+
+  &:hover {
+    border-bottom-style: solid;
+    border-bottom-color: $textColor;
+    color: $textColor;
+  }
 }
-.link:hover {
-  border-bottom-style: solid;
-  color: #393939;
+
+@media (max-width: 800px) {
+  .wrapper {
+    width: 80%;
+    min-width: 0;
+  }
+}
+
+@media (max-height: 500px) {
+  .wrapper {
+    top: 45%;
+  }
 }
