@@ -1,0 +1,34 @@
+body {
+  background-color: #e4e4e4
+}
+
+.wrapper {
+  font-family: Arial, sans-serif;
+  font-size: 20pt;
+  text-align: center;
+
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background-color: white;
+  padding: 1em;
+  font-weight: bold;
+  color: #393939;
+
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.link {
+  color: black;
+  text-decoration: none;
+  font-size: 0.8em;
+  border-bottom: 1pt dashed black;
+  font-weight: normal;
+  color: #494949;
+}
+.link:hover {
+  border-bottom-style: solid;
+  color: #393939;
+}
